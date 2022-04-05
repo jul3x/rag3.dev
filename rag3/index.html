@@ -1,0 +1,182 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<!-- TODO -->
+<!-- WCAG -->
+<!-- SEO -->
+
+<head>
+  <meta charset="utf-8">
+  <title>RAG3: Top-down single/multiplayer shooter game with time manipulation mechanics</title>
+  <meta name="description" content="RAG3: Top-down single/multiplayer shooter game with time manipulation mechanics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="RAG3: Top-down single/multiplayer shooter game with time manipulation mechanics">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://j3x.dev/rag3">
+  <meta property="og:image" content="https://j3x.dev/img/rag3.png">
+
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../icon.png">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/rag3-style.css">
+
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="theme-color" content="#dd1749">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <div id="header">
+        <div id="header-wrapper">
+          <div class="candle">
+            <img src="../img/candle.png" class="base-candle" />
+            <img src="../img/flame.gif" class="flame" />
+          </div>
+          <div id="logo">
+            <img id="logo" src="../img/rag3.png" />
+          </div>
+          <div class="candle">
+            <img src="../img/candle_2.png" class="base-candle" />
+            <img src="../img/flame.gif" class="flame" />
+          </div>
+        </div>
+    </div>
+
+    <div id="menu-wrapper">
+      <div id="menu-background">
+        
+      </div>
+      <div id="menu">
+        <ul>
+            <li class="link"><a href="#about">About</a></li><!--
+          --><li class="skull"></li><!--
+          --><li class="link"><a href="#promo">Promo</a></li><!--
+          --><li class="skull"></li><!--
+          --><li class="link"><a href="#play">Play</a></li><!--
+          --><li class="skull"></li><!--
+          --><li class="link"><a href="#gallery">Gallery</a></li><!--
+          --><li class="skull"></li><!--
+          --><li class="link"><a href="#contribute">Contribute</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="content">
+
+      <div class="section">
+        <div class="section-title" id="about">
+          <img src="../img/henry.png" />
+          About game
+        </div>
+        <div class="border">
+          <div class="corner"></div>
+          <div class="middle"></div>
+          <div class="corner mirror"></div>
+          <div class="lamp"></div>
+        </div>
+        <div class="main">
+          <div class="text">
+            <p>
+              Have you ever wondered what would you do if you could turn back time?
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen 
+              book. It has survived not only five centuries, 
+              but also the leap into electronic typesetting, remaining essentially unchanged. 
+              It was popularised in the 1960s with the release of Letraset sheets containing 
+              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
+              PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="section-title right inside" id="promo">
+          Promo
+          <img src="../img/cultist.png" />
+        </div>
+        <div class="border border-bottom">
+          <div class="lamp left"></div>
+          <div class="corner vmirror"></div>
+          <div class="middle vmirror"></div>
+          <div class="corner vhmirror"></div>
+        </div>
+      </div>
+      <div class="youtube-video">
+        <div class="teleportation"></div>
+        <iframe src="https://www.youtube.com/embed/5WjXPlnV8K0" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="teleportation"></div>
+      </div>     
+      <div class="section">
+        <div class="section-title" id="play">
+          <img src="../img/berserker.png" />
+          Play
+        </div>
+        <div class="border">
+          <div class="corner"></div>
+          <div class="middle"></div>
+          <div class="corner mirror"></div>
+          <div class="lamp"></div>
+        </div>
+        <div class="main">
+          <div class="text">
+            <p>
+              Have you ever wondered what would you do if you could turn back time?
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen 
+              book. It has survived not only five centuries, 
+              but also the leap into electronic typesetting, remaining essentially unchanged. 
+              It was popularised in the 1960s with the release of Letraset sheets containing 
+              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
+              PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="border border-bottom">
+          <div class="corner vmirror"></div>
+          <div class="middle vmirror"></div>
+          <div class="corner vhmirror"></div>
+        </div>
+      </div>
+
+      <div class="coffin">
+        <img src="../img/coffin.png" />
+      </div>
+     
+    </div>  
+  </div>
+
+  <script src="js/vendor/modernizr-3.11.8.min.js"></script>
+  <script type="text/javascript">
+      var menu = document.getElementById("menu");
+      var links = menu.getElementsByTagName("a");
+
+      for (var element of links) {
+
+
+        element.onclick = function (e) {
+          e.preventDefault();
+          var section_name = this.getAttribute("href").substring(1);
+          var scroll_to = document.getElementById(section_name);
+          scroll_to.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        };
+      }
+  </script>
+
+</body>
+
+</html>
