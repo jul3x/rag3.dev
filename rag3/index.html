@@ -34,6 +34,7 @@
 </head>
 
 <body>
+  <a href="javascript:" id="return-to-top"><span>^</span></a>
 
   <div id="wrapper">
     <div id="header">
@@ -58,15 +59,15 @@
       </div>
       <div id="menu">
         <ul>
-            <li class="link"><a href="#about">About</a></li><!--
+            <li class="link"><a href="#about" class="smooth-link">About</a></li><!--
           --><li class="skull"></li><!--
-          --><li class="link"><a href="#promo">Promo</a></li><!--
+          --><li class="link"><a href="#promo" class="smooth-link">Promo</a></li><!--
           --><li class="skull"></li><!--
-          --><li class="link"><a href="#play">Play</a></li><!--
+          --><li class="link"><a href="#play" class="smooth-link">Play</a></li><!--
           --><li class="skull"></li><!--
-          --><li class="link"><a href="#gallery">Gallery</a></li><!--
+          --><li class="link"><a href="#gallery" class="smooth-link">Gallery</a></li><!--
           --><li class="skull"></li><!--
-          --><li class="link"><a href="#contribute">Contribute</a></li>
+          --><li class="link"><a href="#contribute" class="smooth-link">Contribute</a></li>
         </ul>
       </div>
     </div>
@@ -87,17 +88,29 @@
         <div class="main">
           <div class="text">
             <p>
-              Have you ever wondered what would you do if you could turn back time?
+              Have you ever wondered what would you do if you could turn back time?<br/>
+              <strong>RAG3</strong> makes impossible things possible.<br/>
+              Join to the adventure and help <strong>Henry</strong> in preventing the tragic events.
             </p>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-              when an unknown printer took a galley of type and scrambled it to make a type specimen 
-              book. It has survived not only five centuries, 
-              but also the leap into electronic typesetting, remaining essentially unchanged. 
-              It was popularised in the 1960s with the release of Letraset sheets containing 
-              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
-              PageMaker including versions of Lorem Ipsum.
+              <strong>RAG3</strong> is 2D top-down shooter game (currently in demo phase) made on top of self-made multiplatform engine. 
+              The gameplay consists of skillful levelling, with elimination of all obstacles encountered (enemies and inanimate things as well) along the way. 
+              The basic feature of the game is the significant dynamics, most of the time requiring the considerable concentration. 
+              The game's goal is providing sensations and joy from battles with various creatures while wandering through many types of locations (from mazes to open worlds).
+            </p>
+            <p>
+              One of the most distinguishing features of the game is real-time time manipulation mechanics.
+              Player is allowed to slow down the gameplay for a short period of time (bullet time) and is able to travel back to the past.
+              This feature is strictly integrated with battles and can be used in a fully dynamic way. 
+            </p>
+            <p>
+              The plot of the game can be discovered only directly through the gameplay.
+              If you want to learn more about <strong>RAG3</strong> world, go to the <strong><a href="#play" class="smooth-link">Play</a></strong> section!
+              You can play in <strong>multiplayer</strong> mode with your friends as well!            
+            </p>
+            <p>
+              <strong>Beware!</strong> Travelling in time comes with consequences.
+              Be careful when you meet your past self!
             </p>
           </div>
         </div>
@@ -134,17 +147,7 @@
         <div class="main">
           <div class="text">
             <p>
-              Have you ever wondered what would you do if you could turn back time?
-            </p>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-              when an unknown printer took a galley of type and scrambled it to make a type specimen 
-              book. It has survived not only five centuries, 
-              but also the leap into electronic typesetting, remaining essentially unchanged. 
-              It was popularised in the 1960s with the release of Letraset sheets containing 
-              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
-              PageMaker including versions of Lorem Ipsum.
+              TODO
             </p>
           </div>
         </div>
@@ -187,20 +190,35 @@
           <div class="lamp"></div>
         </div>
         <div class="main">
-          <div class="text">
-            <p>
-              Have you ever wondered what would you do if you could turn back time?
-            </p>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-              when an unknown printer took a galley of type and scrambled it to make a type specimen 
-              book. It has survived not only five centuries, 
-              but also the leap into electronic typesetting, remaining essentially unchanged. 
-              It was popularised in the 1960s with the release of Letraset sheets containing 
-              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
-              PageMaker including versions of Lorem Ipsum.
-            </p>
+          <div class="text" id="contribute-text-wrapper">
+            <div id="contribute-text">
+              <p>
+                <strong>RAG3</strong> code is hosted on <strong>Github</strong> under the GNU General Public License v3.0.
+                Every volunteer is strongly encouraged to take part in a development process. Link to the repository can be found in this section.  
+              </p>
+              <p>
+                If you are not a software developer - piece of cake. You don't need to modify the code to change the game.
+              </p>
+              <p>
+                Game has been created with potential extensions and modifications in mind. Core architecture is designed in a very flexible way.
+                One can easily modify game objects, maps, characters and add new ones. A lot of game's behaviors and actions is parametrized and is editable via configuration files.
+                Every object used in a game is described in <strong>*.j3x</strong> files in <strong>data/</strong> directory. Syntax of files is self-describing.
+                <strong>RAG3</strong> provides dedicated map/game editor <strong>RAG3Editor</strong> as an additional application for easy map making and environment edition.
+                Instruction can be found <a href="https://github.com/jul3x/RAG3#rag3editor" target="_blank">here</a>.
+              </p>
+              <p>
+                You can create maps for personal use, share them with your friends to play in <strong>multiplayer</strong> mode
+                or even contribute to the main branch of RAG3 by creating <a href="https://github.com/jul3x/RAG3/compare" target="_blank">pull requests</a>.</p>
+              </p>
+            </div>
+            <div id="socials">
+              <h2>Socials</h2>
+              <ul>
+                <li><img src="../img/GitHub_Logo_White.png" /><a href="https://github.com/jul3x/RAG3" target="_blank">jul3x/RAG3</a></li>
+                <li><img src="../img/itchio-logo-white.png" /><a href="https://itch.io/RAG3" target="_blank">RAG3</a></li>
+                <li><img src="../img/fb.png" id="fb-logo" /><a href="https://facebook.com/RAG3" target="_blank">RAG3 - FB</a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="border border-bottom">
@@ -221,11 +239,9 @@
   <script src="js/vendor/modernizr-3.11.8.min.js"></script>
   <script type="text/javascript">
       var menu = document.getElementById("menu");
-      var links = menu.getElementsByTagName("a");
+      var links = document.getElementsByClassName("smooth-link");
 
       for (var element of links) {
-
-
         element.onclick = function (e) {
           e.preventDefault();
           var section_name = this.getAttribute("href").substring(1);
@@ -233,6 +249,10 @@
           scroll_to.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         };
       }
+
+      document.getElementById('return-to-top').onclick = function() {      // When arrow is clicked
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
   </script>
 
 </body>
