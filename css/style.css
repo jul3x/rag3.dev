@@ -257,6 +257,7 @@ textarea {
 
 #logo {
   width: 6em;
+  max-width: 90%;
   height: 2.5em;
   margin: 0 auto;
   background-color: #dd1749;
@@ -285,4 +286,21 @@ textarea {
 #content p {
   margin: 0;
   padding: 0;
+}
+
+
+@media (max-width: 768px) {
+  #logo {
+    font-size: 4em;
+  }
+
+  #content {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 380px) {
+  #logo {
+    font-size: 3em;
+  }
 }
