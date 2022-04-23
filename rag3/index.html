@@ -1,14 +1,13 @@
 <!doctype html>
 <html class="no-js" lang="en">
 
-<!-- TODO -->
-<!-- WCAG -->
-<!-- SEO -->
-
 <head>
   <meta charset="utf-8">
   <title>RAG3: Top-down single/multiplayer shooter game with time manipulation mechanics</title>
-  <meta name="description" content="RAG3: Top-down single/multiplayer shooter game with time manipulation mechanics">
+  <meta name="description" content="RAG3 is a 2D top-down shooter game made on top of self-made multiplatform engine. 
+  The gameplay consists of skillful levelling, with elimination of all obstacles encountered (enemies and inanimate things as well) along the way. 
+  The basic feature of the game is the significant dynamics, most of the time requiring the considerable concentration. 
+  The game's goal is providing sensations and joy from battles with various creatures while wandering through many types of locations (from mazes to open worlds).">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="RAG3: Top-down single/multiplayer shooter game with time manipulation mechanics">
@@ -22,10 +21,8 @@
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/rag3-style.css">
-  <link href="../css/ninja-slider.css" rel="stylesheet" />
-  <script src="../js/ninja-slider.js" type="text/javascript"></script>
+  <script src="../js/siema.min.js" type="text/javascript"></script>
 
-  <link rel="manifest" href="../site.webmanifest">
   <meta name="theme-color" content="#dd1749">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,20 +31,28 @@
 </head>
 
 <body>
-  <a href="javascript:" id="return-to-top"><span>^</span></a>
+  <a href="javascript:" id="return-to-top" aria-label="Return to top"><span>^</span></a>
+  <div id="loading">
+    <div id="loading-spinner">
+    <img src="../img/rag3/wolf.gif" alt="Loading wolf spinner" title="Loading wolf spinner" />
+    <div>
+      Loading...
+    </div>
+    </div>
+  </div>
 
   <div id="wrapper">
     <div id="header">
         <div id="header-wrapper">
           <div class="candle">
-            <img src="../img/rag3/candle.png" class="base-candle" />
+            <img src="../img/rag3/candle.png" class="base-candle" alt="Oldschool candle" title="Oldschool candle" />
             <img src="../img/rag3/flame.gif" class="flame" />
           </div>
           <div id="logo">
-            <img id="logo" src="../img/rag3/rag3.png" />
+            <img id="logo" src="../img/rag3/rag3.png" srcset="../img/rag3/420/rag3.png 420w, ../img/rag3/768/rag3.png 768w, ../img/rag3/1024/rag3.png 1024w, ../img/rag3/rag3.png" alt="RAG3 Logo" title="RAG3 Logo" />
           </div>
           <div class="candle">
-            <img src="../img/rag3/candle_2.png" class="base-candle" />
+            <img src="../img/rag3/candle_2.png" class="base-candle" alt="Oldschool candle" title="Oldschool candle" />
             <img src="../img/rag3/flame.gif" class="flame" />
           </div>
         </div>
@@ -57,7 +62,7 @@
       <div id="menu-background">
         
       </div>
-      <div id="menu">
+      <div id="menu" aria-label="Site navigation">
         <ul>
             <li class="link"><a href="#about" class="smooth-link">About</a></li><!--
           --><li class="skull"></li><!--
@@ -76,7 +81,7 @@
 
       <div class="section">
         <div class="section-title" id="about">
-          <img src="../img/rag3/henry.png" />
+          <img src="../img/rag3/henry.png" alt="Henry - RAG3 main character" title="Henry - RAG3 main character" />
           About game
         </div>
         <div class="border">
@@ -93,7 +98,7 @@
               Join to the adventure and help <strong>Henry</strong> in preventing the tragic events.
             </p>
             <p>
-              <strong>RAG3</strong> is 2D top-down shooter game (currently in demo phase) made on top of self-made multiplatform engine. 
+              <strong>RAG3</strong> is a 2D top-down shooter game (currently in demo phase) made on top of self-made multiplatform engine. 
               The gameplay consists of skillful levelling, with elimination of all obstacles encountered (enemies and inanimate things as well) along the way. 
               The basic feature of the game is the significant dynamics, most of the time requiring the considerable concentration. 
               The game's goal is providing sensations and joy from battles with various creatures while wandering through many types of locations (from mazes to open worlds).
@@ -116,7 +121,7 @@
         </div>
         <div class="section-title right inside" id="promo">
           Promo
-          <img src="../img/rag3/cultist.png" />
+          <img src="../img/rag3/cultist.png" alt="Cultist - Henry's nemesis" title="Cultist - Henry's nemesis" />
         </div>
         <div class="border border-bottom">
           <div class="lamp left"></div>
@@ -125,7 +130,7 @@
           <div class="corner vhmirror"></div>
         </div>
       </div>
-      <div class="youtube-video">
+      <div class="youtube-video" aria-label="RAG3 promo video">
         <div class="teleportation"></div>
         <iframe src="https://www.youtube.com/embed/5WjXPlnV8K0" 
         title="YouTube video player" frameborder="0" 
@@ -135,7 +140,7 @@
       </div>     
       <div class="section">
         <div class="section-title" id="play">
-          <img src="../img/rag3/berserker.png" />
+          <img src="../img/rag3/berserker.png" alt="Berserker - unpredictable creature" title="Berserker - unpredictable creature" />
           Play
         </div>
         <div class="border">
@@ -153,7 +158,7 @@
         </div>
         <div class="section-title right inside" id="gallery">
           Gallery
-          <img src="../img/rag3/time_addict.png" />
+          <img src="../img/rag3/time_addict.png" alt="Time addict - too much RAG3" title="Time addict - too much RAG3" />
         </div>
         <div class="border border-bottom">
           <div class="lamp left"></div>
@@ -163,24 +168,24 @@
         </div>
       </div>
 
-      <div id="ninja-slider">
-        <div class="inner">
-            <ul>
-              <li><a class="ns-img" href="../img/rag3/screens/1.jpg"></a></li>
-              <li><a class="ns-img" href="../img/rag3/screens/2.jpg"></a></li>
-              <li><a class="ns-img" href="../img/rag3/screens/3.jpg"></a></li>
-              <li><a class="ns-img" href="../img/rag3/screens/4.jpg"></a></li>
-              <li><a class="ns-img" href="../img/rag3/screens/5.jpg"></a></li>
-              <li><a class="ns-img" href="../img/rag3/screens/6.jpg"></a></li>
-              <li><a class="ns-img" href="../img/rag3/screens/7.jpg"></a></li>
-              <li><img class="ns-img" src="../img/rag3/screens/8.jpg"></li>
-            </ul>
+      <div id="gallery-slider" aria-label="Gallery">
+        <div class="siema">
+          <div><img loading="lazy" src="../img/rag3/screens/1.jpg" srcset="../img/rag3/screens/420/1.jpg 420w, ../img/rag3/screens/768/1.jpg 768w, ../img/rag3/screens/1024/1.jpg 1024w, ../img/rag3/screens/1.jpg"></div>
+          <div><img loading="lazy" src="../img/rag3/screens/2.jpg" srcset="../img/rag3/screens/420/1.jpg 420w, ../img/rag3/screens/768/2.jpg 768w, ../img/rag3/screens/1024/2.jpg 1024w, ../img/rag3/screens/2.jpg"></div>
+          <div><img loading="lazy" src="../img/rag3/screens/3.jpg" srcset="../img/rag3/screens/420/1.jpg 420w, ../img/rag3/screens/768/3.jpg 768w, ../img/rag3/screens/1024/3.jpg 1024w, ../img/rag3/screens/3.jpg"></div>
+          <div><img loading="lazy" src="../img/rag3/screens/4.jpg" srcset="../img/rag3/screens/420/1.jpg 420w, ../img/rag3/screens/768/4.jpg 768w, ../img/rag3/screens/1024/4.jpg 1024w, ../img/rag3/screens/4.jpg"></div>
+          <div><img loading="lazy" src="../img/rag3/screens/5.jpg" srcset="../img/rag3/screens/420/1.jpg 420w, ../img/rag3/screens/768/5.jpg 768w, ../img/rag3/screens/1024/5.jpg 1024w, ../img/rag3/screens/5.jpg"></div>
+          <div><img loading="lazy" src="../img/rag3/screens/6.jpg" srcset="../img/rag3/screens/420/1.jpg 420w, ../img/rag3/screens/768/6.jpg 768w, ../img/rag3/screens/1024/6.jpg 1024w, ../img/rag3/screens/6.jpg"></div>
+          <div><img loading="lazy" src="../img/rag3/screens/7.jpg" srcset="../img/rag3/screens/420/1.jpg 420w, ../img/rag3/screens/768/7.jpg 768w, ../img/rag3/screens/1024/7.jpg 1024w, ../img/rag3/screens/7.jpg"></div>
+          <div><img loading="lazy" src="../img/rag3/screens/8.jpg" srcset="../img/rag3/screens/420/1.jpg 420w, ../img/rag3/screens/768/8.jpg 768w, ../img/rag3/screens/1024/8.jpg 1024w, ../img/rag3/screens/8.jpg"></div>
         </div>
+        <div class="prev noselect" aria-label="Previous slide">&lt;</div>
+        <div class="next noselect" aria-label="Next slide">&gt;</div>
       </div>
 
       <div class="section">
         <div class="section-title" id="contribute">
-          <img src="../img/rag3/giorgio.png" />
+          <img src="../img/rag3/giorgio.png" alt="Giorgio - don't mess with him" title="Giorgio - don't mess with him" />
           Contribute
         </div>
         <div class="border">
@@ -236,8 +241,16 @@
     </div>  
   </div>
 
-  <script src="js/vendor/modernizr-3.11.8.min.js"></script>
+  <script src="../js/vendor/modernizr-3.11.8.min.js"></script>
   <script type="text/javascript">
+      window.addEventListener('load', function () {
+        var element = document.getElementById('loading');
+        element.style.opacity = 0;
+        window.setTimeout(function(){
+          element.style.display = 'none';
+        }, 500);
+      });
+
       var menu = document.getElementById("menu");
       var links = document.getElementsByClassName("smooth-link");
 
@@ -250,11 +263,28 @@
         };
       }
 
-      document.getElementById('return-to-top').onclick = function() {      // When arrow is clicked
+      document.getElementById('return-to-top').onclick = function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       };
+
+      var siema = new Siema({
+        selector: '.siema',
+        duration: 200,
+        easing: 'ease-out',
+        perPage: 1,
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: true,
+        rtl: false,
+        onInit: () => {},
+        onChange: () => {},
+      });
+
+      document.querySelector('.prev').addEventListener('click', () => siema.prev());
+      document.querySelector('.next').addEventListener('click', () => siema.next());
   </script>
 
 </body>
-
 </html>
