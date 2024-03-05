@@ -1,5 +1,3 @@
-# j3x.dev
+# RAG3 Website
 
-Source code of personal website wannabe.  
-
-For now just a placeholder.
+Source code of RAG3 static website.
