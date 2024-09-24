@@ -432,7 +432,7 @@ a:hover {
 #menu ul li.link {
   text-align: center;
   width: 16%;
-  background: url('../img/rag3/rag3_menu.png') top no-repeat;
+  background: url('../img/rag3_menu.png') top no-repeat;
   font-size: 2em;
   transition: 0.3s;
   line-height: 1.5em;
@@ -462,7 +462,7 @@ a:hover {
 
 #menu ul li.skull {
   width: 5%;
-  background: url('../img/rag3/skull.png') center no-repeat;
+  background: url('../img/skull.png') center no-repeat;
   background-size: contain;
   height: 3em;
   vertical-align: bottom;
@@ -531,7 +531,7 @@ a:hover {
 
 .section .border .lamp {
   position: absolute;
-  background: url('../img/rag3/lamp.png') center no-repeat;
+  background: url('../img/lamp.png') center no-repeat;
   -ms-interpolation-mode: nearest-neighbor;
   image-rendering: pixelated;
   background-size: contain;
@@ -555,14 +555,14 @@ a:hover {
 
 .section .border .corner {
   width: 60px;
-  background: url('../img/rag3/corner.png') center no-repeat;
+  background: url('../img/corner.png') center no-repeat;
   background-size: contain;
   z-index: inherit;
 }
 
 .section .border .middle {
   height: 100%;
-  background: url('../img/rag3/line.png') center repeat;
+  background: url('../img/line.png') center repeat;
   background-size: contain;
   flex-grow: 1;
   z-index: inherit;
@@ -578,7 +578,7 @@ a:hover {
 .section .main .text {
   padding: 1.8em;
   padding-bottom: 148px;
-  background: rgba(28, 22, 19, 1.0) url('../img/rag3/triquetra.png') center no-repeat;
+  background: rgba(28, 22, 19, 1.0) url('../img/triquetra.png') center no-repeat;
   background-size: 15%;
   background-position: 50% 75%;
   -ms-interpolation-mode: nearest-neighbor;
@@ -598,7 +598,7 @@ a:hover {
 }
 
 .youtube-video .teleportation {
-  background: url('../img/rag3/teleportation.gif') center no-repeat;
+  background: url('../img/teleportation.gif') center no-repeat;
   width: 10%;
   height: 100%;
   background-size: contain;
@@ -816,7 +816,7 @@ a:hover {
     width: 10%;
     height: 50%;
     z-index: -1;
-    background: url('../img/rag3/skull.png') center no-repeat;
+    background: url('../img/skull.png') center no-repeat;
     background-size: contain;
     -ms-interpolation-mode: nearest-neighbor;
     image-rendering: pixelated;
